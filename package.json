@@ -1,0 +1,22 @@
+{
+  "name": "eslint-config-better",
+  "version": "0.0.1",
+  "description": "Better eslint configs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waantony/eslint-config-better.git"
+  },
+  "keywords": [
+    "eslint-config-better"
+  ],
+  "author": "Antony Wang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/waantony/eslint-config-better/issues"
+  },
+  "homepage": "https://github.com/waantony/eslint-config-better#readme"
+}
