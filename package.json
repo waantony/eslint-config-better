@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-better",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Better eslint configs.",
   "main": "index.js",
   "scripts": {

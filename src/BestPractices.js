@@ -19,7 +19,7 @@ module.exports = {
     'default-case': [2, { // 强制 switch 语句中必须有 default case，除非使用指定注释来表明不需要 default
       commentPattern: '^no default', // 正则字符串，匹配不需要 default 语句的注释，默认为 `// no default`
     }],
-    'default-case-last': [2], // 强制 switch 中的 default 语句如果存在则只能放在最后
+    // 'default-case-last': [2], // 强制 switch 中的 default 语句如果存在则只能放在最后
     'default-param-last': [2], // 强制默认参数必须放在最后
     'dot-location': [2, 'property'], // 强制当使用点号且需要换行时，在点号之前或之后换行，'object' (默认，点和对象一行) | 'property' (点和属性一行)
     'dot-notation': [2, { // 强制访问对象属性时，尽可能使用点号而不是方括号

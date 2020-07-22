@@ -11,7 +11,7 @@ module.exports = {
     'no-dupe-class-members': [2], // 禁止 class 中有重复的成员名称
     'no-duplicate-imports': [2, { includeExports: true }], // 禁止重复导入一个模块，也就是对一个模块的所有导入必须在一条语句中，包括引入后需要直接导出的变量
     'no-new-symbol': [2], // 禁止对 Symbol() 使用 new
-    'no-restricted-exports': [2, { restrictedNamedExports: ['fs', 'path'] }], // 禁止 export 某些指定的名称，默认无禁止 restrictedNamedExports: []
+    // 'no-restricted-exports': [2, { restrictedNamedExports: ['fs', 'path'] }], // 禁止 export 某些指定的名称，默认无禁止 restrictedNamedExports: []
     'no-restricted-imports': [2, 'fs', 'path'], // 禁止 import 某些其他环境特定的模块，比如 Node 下的 fs 等模块只能用 require 而不能用 import 导入
     'no-this-before-super': [2], // 继承类（subclass）必须在 constructor 中先调用 super() 后才能使用 this
     'no-useless-computed-key': [2], // 禁止在对象中使用不必要的计算属性名，如 const foo = {['a']: 'b'} 中计算的属性名 'a' 是不必要的

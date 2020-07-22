@@ -7,7 +7,7 @@ module.exports = {
     'brace-style': [2, '1tbs', { // 强制块级代码大括号的风格，默认 1tbs (one true brace style)
       allowSingleLine: true, // 允许块的开括号和闭括号在同一行
     }],
-    'camelcase': [2, { // 强制使用驼峰命名而不是下划线命名
+    'camelcase': [0, { // 强制使用驼峰命名而不是下划线命名
       properties: 'never', // 默认 always 强制属性驼峰命名， never 不检查属性名
       ignoreDestructuring: true, // 是否忽略解构赋值未使用驼峰的报错，默认 false
       allow: [], // 指定允许不使用驼峰命名的变量列表
@@ -33,7 +33,7 @@ module.exports = {
     }],
     'function-call-argument-newline': [0],
     'function-paren-newline': [2, 'consistent'], // 强制函数括号内参数使用一致的换行
-    'id-denylist': [2, 'aaa', 'bbb'], // 自定义哪些变量名称禁止出现，从第二个参数依次排列字符串
+    // 'id-denylist': [2, 'aaa', 'bbb'], // 自定义哪些变量名称禁止出现，从第二个参数依次排列字符串
     'id-length': [0, { // 限制标识符长度
       max: 20, // 变量最大长度
       min: 1, // 变量最小长度
@@ -119,7 +119,7 @@ module.exports = {
      * 'bare-block' 同上，但禁止 * 开头
      * 'separate-lines'，禁止块级注释，强制连续的单行注释
      */
-    'multiline-comment-style': [2, 'starred-block'],
+    'multiline-comment-style': [0, 'starred-block'],
     /**
      * 规定三元表达式操作符是否换行
      * 'always' 默认，强制换行
@@ -139,7 +139,7 @@ module.exports = {
       newIsCapExceptions: [], // 指定 new 后可以不大写的函数列表
       newIsCapExceptionPattern: '', // 正则字符串，指定 new 后可以不大写的匹配字符串
       capIsNewExceptions: [], // 指定首字母大写的可以不使用 new 的函数列表
-      capIsNewExceptionPattern: '', // 指定首字母大写的可以不使用 new 的正则字符串
+      capIsNewExceptionPattern: '^[A-Z0-9]+$', // 指定首字母大写的可以不使用 new 的正则字符串
       properties: true, // 是否检查对象的属性
     }],
     'new-parens': [2, 'always'], // 强制调用无参数构造函数时带括号，默认 always 强制， never 禁止
@@ -335,7 +335,7 @@ module.exports = {
      * never 禁止出现分号，除非是消除下一行以 [ ( / + - 开始的语句的歧义
      */
     'semi': [2, 'never'],
-    'semi-spacing': [2, { before: false, after: false }], // 控制分号前后空格，默认强制前不空后空
+    'semi-spacing': [2, { before: false, after: true }], // 控制分号前后空格，默认强制前不空后空
     'semi-style': [2, 'last'], // 规定分号位置，默认 last 句末，first 句首
     'sort-keys': [0, 'asc', { // 要求对象属性按序排列，默认 asc 升序， desc 降序
       caseSensitive: true, // 排序区分大小写，默认 true
