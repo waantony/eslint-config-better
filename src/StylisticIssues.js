@@ -3,11 +3,11 @@ module.exports = {
     'array-bracket-newline': [2, 'consistent'], // 规定在数组方括号的换行规则，consistent 前后方括号保持一致换行即可
     'array-bracket-spacing': [2, 'never'], // 规定数组方括号两端是否允许空格, never 不允许两端空格
     'array-element-newline': [2, 'consistent'], // 强制数组元素之间换行规则，consistent 所有元素换行保持一致即可
-    'block-spacing': [2], // 强制块级代码开闭括号内有空白
+    'block-spacing': [2, 'always'], // 强制块级代码开闭括号内有空白，默认 always 强制， never 禁止
     'brace-style': [2, '1tbs', { // 强制块级代码大括号的风格，默认 1tbs (one true brace style)
       allowSingleLine: true, // 允许块的开括号和闭括号在同一行
     }],
-    'camelcase': [0, { // 强制使用驼峰命名而不是下划线命名
+    'camelcase': [0, { // 强制使用驼峰命名而不是下划线命名，关闭以兼容不同后端命名风格
       properties: 'never', // 默认 always 强制属性驼峰命名， never 不检查属性名
       ignoreDestructuring: true, // 是否忽略解构赋值未使用驼峰的报错，默认 false
       allow: [], // 指定允许不使用驼峰命名的变量列表
@@ -88,12 +88,12 @@ module.exports = {
       ignoreTemplateLiterals: false, // 是否忽略含有模版字符串的行
       ignoreRegExpLiterals: false, // 是否忽略含有正则表达式的行
     }],
-    'max-lines': [2, {
+    'max-lines': [2, { // 规定文件的最大行数
       max: 300, // 规定文件最大行数，默认 300
       skipBlankLines: false, // 是否忽略空行
       skipComments: true, // 是否忽略只有注释的行
-    }], // 规定文件的最大行数
-    'max-lines-per-function': [2, { // 规定函数最大行数
+    }],
+    'max-lines-per-function': [0, { // 规定函数最大行数
       max: 50, // 函数内最大行数，默认 50
       skipBlankLines: false, // 是否忽略空行
       skipComments: false, // 是否忽略只有注释的行
@@ -106,7 +106,7 @@ module.exports = {
       max: 5, // 最大函数参数个数，默认 3
     }],
     'max-statements': [2, { // 规定函数块中的语句的最大数量
-      max: 10, // 最大语句数量
+      max: 20, // 最大语句数量
     }, {
       ignoreTopLevelFunctions: true, // 是否忽略顶层函数，顶层函数通常逻辑偏多，所以忽略
     }],
@@ -285,13 +285,13 @@ module.exports = {
     /**
      * 换行时操作符的位置
      * after 换行符在操作符后，也就是操作费留在上一行
-     * before 换行符在操作符前，也就是操作符换到下一哈
+     * before 换行符在操作符前，也就是操作符换到下一行
      * none 禁止操作符前后换行，也就是强制一行写完
      */
-    'operator-linebreak': [2, 'after', {
+    'operator-linebreak': [2, 'before', {
       overrides: { // 单独指定某些操作符换行所在位置，key 为换行符，value 为备选项
-        '?': 'after', // 设置 ? 操作符换行时所在位置
-        ':': 'after',
+        '?': 'before', // 设置 ? 操作符换行时所在位置
+        ':': 'before',
       },
     }],
     'padded-blocks': [2, 'never'], // 要求或禁止块内填充（块内以空行开始空行结束），默认 always 强制收尾空行， never 禁止

@@ -3,12 +3,11 @@ module.exports = {
     'init-declarations': [2, 'always'], // 强制或禁止变量声明时必须初始化值 always 强制，never 禁止
     'no-delete-var': [2], // 禁止删除变量，比如 delete x; 会报错
     'no-label-var': [2], // 禁用同一作用域下 label 与变量同名
-    'no-restricted-globals': [2, // 指定禁用的全局变量，每个对象指定一个禁用，多个对象依次往后排列
-      {
-        name: '', // 禁止使用的变量名，比如设置 name: 'location' 后，location.href = 'https://x.com' 会报错
-        message: 'why you can not use xxx?', // 说明禁止使用的原因
-      },
-    ],
+    // 指定禁用的全局变量，每个对象指定一个禁用，多个对象依次往后排列
+    'no-restricted-globals': [2, {
+      name: '', // 禁止使用的变量名，比如设置 name: 'location' 后，location.href = 'https://x.com' 会报错
+      message: 'why you can not use xxx?', // 说明禁止使用的原因
+    }],
     'no-shadow': [2, { // 禁止内层作用域变量/函数声明覆盖外层作用域的同名变量
       builtinGlobals: true, // 是否检测覆盖了 Object，Array、Number 等内置对象名，默认为 false
       hoist: 'functions', // 是否将作用域的所有声明提前，再进行检测，functions（默认，仅函数提前） | all(变量和函数提前) | never(不提前)

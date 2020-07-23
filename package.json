@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-better",
-  "version": "0.0.2",
-  "description": "Better eslint configs.",
+  "version": "0.0.4",
+  "description": "Better ESLint configs, JavaScript better Style, ESLint Shareable Config",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/waantony/eslint-config-better/issues"
   },
-  "homepage": "https://github.com/waantony/eslint-config-better#readme"
+  "homepage": "https://github.com/waantony/eslint-config-better#readme",
+  "devDependencies": {
+    "eslint": "^7.5.0"
+  }
 }

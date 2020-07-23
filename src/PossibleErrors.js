@@ -41,7 +41,8 @@ module.exports = {
     // 'no-loss-of-precision': [2], // 不允许失去精度的字面量数字，Number.MAX_SAFE_INTEGER 为 9007199254740991
     'no-misleading-character-class': [2], // 不允许在字符类语法（character class syntax）中出现由多个 code points 组成的字符
     'no-obj-calls': [2], // 禁止将全局对象（Math、JSON 和 Reflect）当作函数进行调用
-    // 'no-promise-executor-return': [2], // 不允许在 Promise executor 回调函数中返回值，必须调用 resolve / reject，然后才可以使用 return 阻止后续代码执行
+    // 不允许在 Promise executor 回调函数中返回值，必须调用 resolve / reject，然后才可以使用 return 阻止后续代码执行
+    // 'no-promise-executor-return': [2],
     'no-prototype-builtins': [2], // 禁止在对象上直接调用属于 `Object.prototype` 的内置方法，foo.hasOwnProperty('bar') => Object.prototype.hasOwnProperty.call(foo, 'bar')
     'no-regex-spaces': [2], // 禁止正则表达式字面量中出现多个空格，比如：`/foo   bar/` 最好表示为 `/foo {3}bar/`
     'no-setter-return': [2], // 禁止从 setter 描述符中返回值
