@@ -1,5 +1,9 @@
 # eslint-config-better
 
+[toc]
+
+Better ESLint configs, JavaScript Better Style, ESLint Shareable Config
+
 ## install
 
 ```bash
