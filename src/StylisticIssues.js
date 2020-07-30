@@ -53,7 +53,7 @@ module.exports = {
     'line-comment-position': [0, { // 单行注释的位置，规则只允许在行上方或行尾，所以不启用
       position: 'above', // 默认 above 强制在行上方，beside 强制在行尾
     }],
-    'linebreak-style': [2, 'unix'], // 使用一致的换行符风格，默认 unix(LF, \n)，windows(CRLF, \r\n)
+    'linebreak-style': [0, 'unix'], // 使用一致的换行符风格，默认 unix(LF, \n)，windows(CRLF, \r\n)
     'lines-around-comment': [0, { // 控制注释周围空行，该规则忽略 文件头尾 以及 代码注释同行 时
       beforeBlockComment: true, // 是否在块注释前必须空行
       afterBlockComment: true, // 是否在块注释后必须空行
@@ -106,7 +106,7 @@ module.exports = {
       max: 5, // 最大函数参数个数，默认 3
     }],
     'max-statements': [2, { // 规定函数块中的语句的最大数量
-      max: 20, // 最大语句数量
+      max: 50, // 最大语句数量
     }, {
       ignoreTopLevelFunctions: true, // 是否忽略顶层函数，顶层函数通常逻辑偏多，所以忽略
     }],
