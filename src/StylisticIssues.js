@@ -294,7 +294,7 @@ module.exports = {
         ':': 'before',
       },
     }],
-    'padded-blocks': [2, 'never'], // 要求或禁止块内填充（块内以空行开始空行结束），默认 always 强制收尾空行， never 禁止
+    'padded-blocks': [0, 'never'], // 要求或禁止块内填充（块内以空行开始空行结束），默认 always 强制空行， never 禁止
 
     /**
      * 要求或禁止在语句间填充空行
