@@ -8,7 +8,7 @@ module.exports = {
       name: '', // 禁止使用的变量名，比如设置 name: 'location' 后，location.href = 'https://x.com' 会报错
       message: 'why you can not use xxx?', // 说明禁止使用的原因
     }],
-    'no-shadow': [2, { // 禁止内层作用域变量/函数声明覆盖外层作用域的同名变量
+    'no-shadow': [0, { // 禁止内层作用域变量/函数声明覆盖外层作用域的同名变量
       builtinGlobals: true, // 是否检测覆盖了 Object，Array、Number 等内置对象名，默认为 false
       hoist: 'functions', // 是否将作用域的所有声明提前，再进行检测，functions（默认，仅函数提前） | all(变量和函数提前) | never(不提前)
       allow: [], // 指定允许被内层作用域覆盖的变量名称字符串
