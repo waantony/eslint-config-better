@@ -137,7 +137,7 @@ module.exports = {
       location: 'start', // 在注释中检测匹配的位置， 默认 'start' 只匹配最开始，'anywhere' 匹配注释的任何位置
     }],
     'no-with': [2], // 禁用 with 语句s
-    'prefer-named-capture-group': [2], // 强制优先在正则表达式中使用命名捕获组，比如 /(ba[rz])/; 应写为 /(?<id>ba[rz])/;
+    'prefer-named-capture-group': [0], // 强制优先在正则表达式中使用命名捕获组，比如 /(ba[rz])/; 应写为 /(?<id>ba[rz])/;
     'prefer-promise-reject-errors': [2, { // 要求使用 Error 对象作为 Promise 的 reject() 参数
       allowEmptyReject: false, // 是否允许不带参数的 reject()
     }],
@@ -149,7 +149,7 @@ module.exports = {
     'prefer-regex-literals': [2],
     'radix': [2, 'as-needed'], // 要求使用 parseInt() 时必须有基数，'as-needed'(仅必须时, 非 10 时) | 'always'(强制基数)
     'require-await': [2], // 禁止使用不带 await 表达式的 async 函数
-    'require-unicode-regexp': [2], // 强制在 RegExp 上使用 u 标志，以正确处理 UTF-16 Surrogate Pair， 同时尽早抛出语法错误
+    'require-unicode-regexp': [0], // 强制在 RegExp 上使用 u 标志，以正确处理 UTF-16 Surrogate Pair， 同时尽早抛出语法错误
     'vars-on-top': [2], // 要求将 var 声明语句放在作用域的顶部
     'wrap-iife': [ // 强制要求将 IIFE 用括号包裹，以及设置括号的位置，比如 const x = function () { return 1 }() 无括号包裹会报错
       2,
