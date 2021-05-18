@@ -33,7 +33,7 @@ module.exports = {
       allowNamedFunctions: false, // 当允许函数表达式时，是否允许使用命名函数表达式，比如：foo(function fn () { return this.a })
     }],
     'prefer-const': [2, {
-      destructuring: 'any', // 'all' | 'any'，使用 let 解构时，any 其中只要有一个变量未被修改即报错; all 当所有变量都未被修改才报错。
+      destructuring: 'all', // 'all' | 'any'，使用 let 解构时，any 其中只要有一个变量未被修改即报错; all 当所有变量都未被修改才报错。
       ignoreReadBeforeAssign: true, // 是否在第一次赋值之前忽略检查
     }],
     'prefer-destructuring': [2, { // 强制使用对象或数组解构
