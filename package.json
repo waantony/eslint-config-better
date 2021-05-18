@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-better",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Better ESLint configs, JavaScript better Style, ESLint Shareable Config",
   "main": "index.js",
   "scripts": {
