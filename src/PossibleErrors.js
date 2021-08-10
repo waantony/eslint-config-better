@@ -22,7 +22,7 @@ module.exports = {
       conditionalAssign: false, // 是否禁止条件语句中赋值表达式中额外的圆括号，false 表示不禁止
       returnAssign: false, // 是否禁止在 return 语句中的赋值语句周围出现额外的圆括号，false 表示不禁止
       nestedBinaryExpressions: false, // 是否禁止在嵌套的二元表达式中出现额外的圆括号，false 表示不禁止
-      ignoreJSX: 'none', // 忽略 JSX 中哪里出现的额外圆括号， 'none'(不忽略) | 'all'(所有) | 'multi-line'(多行) | 'single-line'(单行)，默认为 'none'
+      ignoreJSX: 'multi-line', // 忽略 JSX 中哪里出现的额外圆括号， 'none'(不忽略) | 'all'(所有) | 'multi-line'(多行) | 'single-line'(单行)，默认为 'none'
       enforceForArrowConditionals: false, // 是否禁止在箭头函数体中的三元表达式周围出现额外的圆括号，false 表示不禁止
     }],
     'no-extra-semi': [2], // 禁用额外多余的分号
