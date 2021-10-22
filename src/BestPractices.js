@@ -131,7 +131,7 @@ module.exports = {
     'no-useless-concat': [2], // 禁止没有必要的字符串拼接，比如两个字面量字符串拼接，应直接写为一个字符串
     'no-useless-escape': [2], // 禁用不必要的转义，比如 'hol\a'; '`${foo}\!`'; /\:/
     'no-useless-return': [2], // 禁止不必要的 return 语句
-    'no-void': [2], // 禁止使用 void 操作符
+    'no-void': [0], // 禁止使用 void 操作符
     'no-warning-comments': [2, { // 自定义在注释中禁止使用哪些词
       terms: ['todo'], // 默认 ['todo', 'fixme', 'xxx']，大小写不敏感但匹配整个词：fix 匹配 FIX 但不匹配 fixing。
       location: 'start', // 在注释中检测匹配的位置， 默认 'start' 只匹配最开始，'anywhere' 匹配注释的任何位置
